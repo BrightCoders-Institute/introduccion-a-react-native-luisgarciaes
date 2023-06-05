@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import AgeCalculatorApp from './AgeCalculator';
 
 const App: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Text>Wello Horld!</Text>
+      <AgeCalculatorApp />
     </View>
   );
 };
@@ -12,8 +13,7 @@ const App: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: '#fff',
   },
 });
 

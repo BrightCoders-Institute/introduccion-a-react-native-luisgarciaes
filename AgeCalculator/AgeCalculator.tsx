@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
 
-const App = () => {
+const AgeCalculatorApp = () => {
   const [age, setAge] = useState('');
   const [calculatedAge, setCalculatedAge] = useState('');
 
@@ -16,13 +16,13 @@ const App = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <View>
       <Text>Age Calculator</Text>
       <TextInput
-        style={styles.input}
         placeholder="Enter your age"
         onChangeText={setAge}
         value={age}
+        keyboardType="numeric"
       />
       <Button title="Calculate" onPress={calculateAge} />
       <Text>{calculatedAge}</Text>
@@ -30,5 +30,4 @@ const App = () => {
   );
 };
 
-
-export default App;
+export default AgeCalculatorApp;
